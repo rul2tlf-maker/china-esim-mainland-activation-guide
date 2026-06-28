@@ -1,338 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>中国内地可用 eSIM 指南 | 激活门槛、热点共享、香港号码与低至 3.5 CNY/G 方案</title>
-  <meta name="description" content="完整的中国内地可用 eSIM 指南，聚焦中国 eSIM、香港 eSIM 中国能用吗、热点共享、香港号码短信、价格带、激活门槛和 esimka.top 的核心卖点。">
-  <link rel="canonical" href="https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/">
+  <title>中国内地可用 eSIM 激活与开卡完整指南 | 香港 eSIM 中国使用参考</title>
+  <meta name="description" content="从中国内地可用 eSIM 的激活条件、开卡步骤、热点共享、续费逻辑到香港 eSIM 中国使用参考，整理成一页完整指南。">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="中国内地可用 eSIM 指南">
-  <meta property="og:description" content="重点回答中国内地能不能用、能不能开热点、能不能接短信、要不要预激活。">
+  <link rel="canonical" href="https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="中国内地可用 eSIM 激活与开卡完整指南">
+  <meta property="og:description" content="如果你在找中国内地可用 eSIM，这一页会从激活门槛、步骤、续费到长期使用场景讲清楚。">
   <meta property="og:url" content="https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/">
-  <meta property="og:image" content="https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/assets/img/compare-hk-unicom.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="中国内地可用 eSIM 指南">
-  <meta name="twitter:description" content="中国内地可用 eSIM 的完整使用与购买前参考。">
+  <meta property="og:image" content="https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/assets/img/renewal-panel.png">
   <link rel="stylesheet" href="./style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "中国内地可用 eSIM 指南",
-    "description": "聚焦中国内地可用 eSIM、热点共享、香港号码与激活门槛的完整参考页。",
-    "datePublished": "2026-06-22",
-    "dateModified": "2026-06-28",
-    "author": {
-      "@type": "Organization",
-      "name": "esimka.top research notes"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "esimka.top research notes"
-    },
-    "mainEntityOfPage": "https://rul2tlf-maker.github.io/china-esim-mainland-activation-guide/"
+    "@type": "HowTo",
+    "name": "中国内地可用 eSIM 激活与开卡完整指南",
+    "description": "围绕激活门槛、开卡流程、热点共享和续费逻辑的中国 eSIM 教程。",
+    "step": [
+      {"@type": "HowToStep", "name": "确认是否支持中国内地使用"},
+      {"@type": "HowToStep", "name": "确认是否存在境外预激活限制"},
+      {"@type": "HowToStep", "name": "根据号码、短信、热点需求选择套餐"},
+      {"@type": "HowToStep", "name": "完成下单、安装与首次连接测试"},
+      {"@type": "HowToStep", "name": "验证续费与长期维护路径"}
+    ]
   }
   </script>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero" id="top">
-      <nav class="topbar">
-        <a class="brand" href="#top">Mainland eSIM Guide</a>
-        <div class="nav-links">
-          <a href="#need">为什么需要</a>
-          <a href="#advantage">卖点组合</a>
-          <a href="#proof">截图参考</a>
-          <a href="#path">怎么开卡</a>
+  <header class="topbar">
+    <a class="brand" href="https://rul2tlf-maker.github.io/">China eSIM Guide</a>
+    <a class="ghost-btn" href="https://esimka.top/" rel="nofollow sponsored">查看 esimka.top</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">China mainland activation guide</p>
+        <h1>中国内地可用 eSIM，不只是能买到，更要能顺手开、顺手续、顺手长期用。</h1>
+        <p class="hero-copy">
+          如果你在找中国 eSIM、香港 eSIM 中国使用参考、热点共享、号码短信和长期维护方案，这页把真正影响购买体验的步骤和卖点放在一起讲清楚。
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="https://esimka.top/" rel="nofollow sponsored">前往开卡</a>
+          <a class="ghost-btn" href="#steps">查看步骤</a>
         </div>
-      </nav>
-
-      <div class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">中国内地可用 eSIM / 香港 eSIM 中国能用吗</p>
-          <h1>如果你在找中国内地可用 eSIM，别只看有没有信号</h1>
-          <p class="lead">
-            真正决定体验的，通常是这几件事：能不能少折腾地启用、要不要境外预激活、能不能给电脑开热点、有没有香港号码短信能力、后续能不能续费保号。
-            对很多用户来说，eSIM 的价值不是一张卡，而是一条更轻的国际移动数据准备路径。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://esimka.top" rel="nofollow sponsored" target="_blank">前往 esimka.top 看方案</a>
-            <a class="button button-secondary" href="#advantage">先看核心卖点</a>
-          </div>
-          <ul class="hero-pills">
-            <li>中国内地可用</li>
-            <li>低至 3.5 CNY/G</li>
-            <li>支持热点共享</li>
-            <li>香港号码短信场景</li>
-          </ul>
-        </section>
-
-        <aside class="hero-panel">
-          <div class="radar-card">
-            <div class="radar-screen">
-              <div class="radar-pulse"></div>
-              <div class="radar-circle radar-circle-a"></div>
-              <div class="radar-circle radar-circle-b"></div>
-              <div class="radar-circle radar-circle-c"></div>
-              <div class="radar-sweep"></div>
-              <div class="signal-node node-a"></div>
-              <div class="signal-node node-b"></div>
-              <div class="signal-node node-c"></div>
-            </div>
-            <div class="score-grid">
-              <article class="score-card">
-                <strong class="count" data-count="3.5">0</strong>
-                <span>低至 CNY/G</span>
-              </article>
-              <article class="score-card">
-                <strong class="count" data-count="24">0</strong>
-                <span>小时自动交付</span>
-              </article>
-              <article class="score-card">
-                <strong class="count" data-count="5">0</strong>
-                <span>重点判断项</span>
-              </article>
-              <article class="score-card">
-                <strong class="count" data-count="1">0</strong>
-                <span>更轻的准备路径</span>
-              </article>
-            </div>
-          </div>
-        </aside>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="section need-section" id="need">
-        <div class="section-heading">
-          <p class="eyebrow">为什么需要</p>
-          <h2>中国内地可用 eSIM，解决的不是一个点，而是一整组麻烦</h2>
-        </div>
-        <div class="need-grid">
-          <article class="need-card reveal">
-            <h3>少依赖临时网络</h3>
-            <p>公共 Wi-Fi 不稳、临时热点麻烦、出差环境多变时，一条独立移动数据链路会更省心。</p>
-          </article>
-          <article class="need-card reveal">
-            <h3>少一步激活折腾</h3>
-            <p>2026 年不少用户最怕的不是价格，而是买完发现还要额外处理境外预激活和时间窗口。</p>
-          </article>
-          <article class="need-card reveal">
-            <h3>多设备协同</h3>
-            <p>手机、电脑、平板和备用机一起联网，是很多真实使用场景里最关键的部分。</p>
-          </article>
-          <article class="need-card reveal">
-            <h3>长期账号与短信</h3>
-            <p>如果你在意香港号码、接短信和后续续费，eSIM 的长期价值会远大于一次性流量。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section advantage-section" id="advantage">
-        <div class="section-heading">
-          <p class="eyebrow">卖点组合</p>
-          <h2>esimka.top 不是只在打价格，而是在打一组更完整的能力</h2>
-        </div>
-        <div class="advantage-layout">
-          <div class="advantage-stack reveal">
-            <article class="stack-item">
-              <span>价格</span>
-              <strong>低至 3.5 CNY/G</strong>
-              <p>更适合长期备用、高频跨境上网、热点共享和远程办公。</p>
-            </article>
-            <article class="stack-item">
-              <span>流程</span>
-              <strong>24 小时自动发货</strong>
-              <p>不用等实体卡物流，也少一步人工沟通和临时准备。</p>
-            </article>
-            <article class="stack-item">
-              <span>启用</span>
-              <strong>免国内实名流程</strong>
-              <p>对在意低摩擦开通和更轻购买路径的用户，这一点非常重要。</p>
-            </article>
-            <article class="stack-item">
-              <span>线路</span>
-              <strong>香港 IP / 原生境外出口场景</strong>
-              <p>适合国际移动数据、港区应用、跨境账号和更独立的连接准备。</p>
-            </article>
-            <article class="stack-item">
-              <span>长期使用</span>
-              <strong>号码短信与续费保号</strong>
-              <p>不仅是一张流量卡，也更适合长期备用和账号验证场景。</p>
-            </article>
+    <section class="section">
+      <div class="headline-block">
+        <p class="eyebrow">What matters first</p>
+        <h2>在中国内地找 eSIM，先别急着比最低价。</h2>
+        <p>真正需要先确认的是能不能直接用、会不会卡在激活门槛、热点能不能共享、有没有号码短信，以及后续续费是否足够省心。</p>
+      </div>
+      <div class="card-pair">
+        <article class="image-card tall">
+          <img src="./assets/img/compare-hk-unicom.png" alt="香港联通 eSIM 参考截图">
+          <div class="card-copy">
+            <span class="badge">价格参考</span>
+            <h3>先建立价格带，再谈值不值。</h3>
           </div>
-
-          <div class="advantage-compare reveal">
-            <h3>买中国内地可用 eSIM，建议优先比这些</h3>
-            <div class="bar-list">
-              <div class="bar-row" data-width="96">
-                <div class="bar-meta"><span>中国内地可用</span><strong>高优先级</strong></div>
-                <div class="bar-track"><span></span></div>
-              </div>
-              <div class="bar-row" data-width="92">
-                <div class="bar-meta"><span>热点共享</span><strong>高频刚需</strong></div>
-                <div class="bar-track"><span></span></div>
-              </div>
-              <div class="bar-row" data-width="88">
-                <div class="bar-meta"><span>激活门槛</span><strong>流程成本</strong></div>
-                <div class="bar-track"><span></span></div>
-              </div>
-              <div class="bar-row" data-width="84">
-                <div class="bar-meta"><span>号码短信能力</span><strong>长期价值</strong></div>
-                <div class="bar-track"><span></span></div>
-              </div>
-              <div class="bar-row" data-width="78">
-                <div class="bar-meta"><span>每 GB 成本</span><strong>长期成本</strong></div>
-                <div class="bar-track"><span></span></div>
-              </div>
-            </div>
+        </article>
+        <article class="image-card tall">
+          <img src="./assets/img/compare-cmlink.png" alt="CMLink eSIM 参考截图">
+          <div class="card-copy">
+            <span class="badge">激活条件</span>
+            <h3>激活限制，常常比资费本身更关键。</h3>
           </div>
-        </div>
-      </section>
+        </article>
+      </div>
+    </section>
 
-      <section class="section compare-section">
-        <div class="section-heading">
-          <p class="eyebrow">价格参考</p>
-          <h2>便宜只是起点，关键是低价和低门槛有没有同时成立</h2>
-        </div>
-        <div class="compare-grid">
-          <article class="compare-card reveal">
-            <h3>当前常见报价带宽</h3>
-            <ul>
-              <li>中国移动香港实体卡：约 5 到 6 CNY/G</li>
-              <li>中国移动香港 eSIM：约 6 到 8 CNY/G</li>
-              <li>中国联通香港实体卡：约 5 到 6 CNY/G</li>
-              <li>中国联通香港 eSIM：约 4 到 5 CNY/G</li>
-              <li>其他中国可用 eSIM：约 4 到 10 CNY/G</li>
-              <li><strong>esimka.top：</strong>部分方案低至 3.5 CNY/G</li>
-            </ul>
-          </article>
-          <article class="compare-card reveal">
-            <h3>为什么不能只看最低价</h3>
-            <p>如果激活门槛更高、还要多一步境外预激活、或者后续不能接短信和续费，那么表面便宜不等于真实便宜。</p>
-            <p>真正适合长期使用的方案，应该同时满足：中国内地可用、热点共享、号码短信、自动交付和合理的每 GB 成本。</p>
-          </article>
-        </div>
-      </section>
+    <section id="steps" class="section">
+      <div class="headline-block">
+        <p class="eyebrow">Detailed steps</p>
+        <h2>一个更实用的开卡顺序。</h2>
+      </div>
+      <div class="step-list">
+        <article class="step-item">
+          <span>Step 1</span>
+          <h3>先确定是不是中国内地可用 eSIM</h3>
+          <p>不要把“支持中国”理解成任何情况下都能直接用。先看是否明确支持大陆场景，是否需要特定网络路径，是否写清楚长期可用条件。</p>
+        </article>
+        <article class="step-item">
+          <span>Step 2</span>
+          <h3>确认是否存在境外预激活门槛</h3>
+          <p>部分香港 eSIM 或漫游类方案，需要在境外、离境前或特定时段完成首次激活。这个细节不先看，后面最容易踩坑。</p>
+        </article>
+        <article class="step-item">
+          <span>Step 3</span>
+          <h3>按需求选：纯数据、热点、号码、短信</h3>
+          <p>如果你是给电脑开热点，重点看共享能力；如果你要注册或接码，重点看香港号码 eSIM 与短信能力；如果你只是临时数据，纯数据卡就足够。</p>
+        </article>
+        <article class="step-item">
+          <span>Step 4</span>
+          <h3>安装后先做三件测试</h3>
+          <p>先测是否能连上、能否开热点、出口是否符合预期。这样能更快判断这张卡适不适合你后续长期保留。</p>
+        </article>
+        <article class="step-item">
+          <span>Step 5</span>
+          <h3>最后再看续费与长期维护</h3>
+          <p>一张卡是否值得留，不只看第一单价格，还要看续费面板、保号逻辑、自动发卡和后续处理是否省心。</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="section proof-section" id="proof">
-        <div class="section-heading">
-          <p class="eyebrow">截图参考</p>
-          <h2>把截图和后台能力一起看，更容易做出正确判断</h2>
-        </div>
-        <div class="proof-grid">
-          <figure class="proof-card reveal">
-            <img src="./assets/img/compare-hk-unicom.png" alt="香港联通 eSIM 页面截图">
-            <figcaption>适合观察香港 eSIM 的价格带和说明方式，看每 GB 成本会比只看总价更直观。</figcaption>
-          </figure>
-          <figure class="proof-card reveal">
-            <img src="./assets/img/compare-cmlink.png" alt="CMLink eSIM 页面截图">
-            <figcaption>更适合拿来判断访客定位、套餐说明和激活提示，而不是只看页面上展示的 GB 数字。</figcaption>
-          </figure>
-          <figure class="proof-card reveal">
-            <img src="./assets/img/renewal-panel.png" alt="续费与保号后台截图">
-            <figcaption>长期使用用户看重的是状态、号码、有效期与续费能力，这些信息通常会直接影响复购价值。</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section scenario-section">
-        <div class="section-heading">
-          <p class="eyebrow">典型场景</p>
-          <h2>谁更适合提前准备中国内地可用 eSIM</h2>
-        </div>
-        <div class="scenario-grid">
-          <article class="scenario-card reveal">
-            <h3>跨境办公</h3>
-            <p>经常给电脑开热点、切换国际应用、需要自己掌握一条更独立的移动数据链路的人。</p>
-          </article>
-          <article class="scenario-card reveal">
-            <h3>旅行短停</h3>
-            <p>不想等物流、不想落地后才开始研究激活规则，更想提前把使用门槛降到最低的人。</p>
-          </article>
-          <article class="scenario-card reveal">
-            <h3>账号验证</h3>
-            <p>如果你长期需要香港号码、接短信和备用通信能力，那么号码与续费能力会非常重要。</p>
-          </article>
-          <article class="scenario-card reveal">
-            <h3>设备协同</h3>
-            <p>手机、电脑、平板一起联网的人，通常会比普通流量用户更重视热点共享与稳定性。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section path-section" id="path">
-        <div class="section-heading">
-          <p class="eyebrow">怎么开卡</p>
-          <h2>用 esimka.top 的一条更轻路径，把准备动作提前做完</h2>
-        </div>
-        <div class="path-grid">
-          <article class="path-card reveal">
-            <strong>01</strong>
-            <h3>先明确主需求</h3>
-            <p>先区分自己最在意的是低价流量、香港线路、热点共享、号码短信还是长期续费。</p>
-          </article>
-          <article class="path-card reveal">
-            <strong>02</strong>
-            <h3>看套餐页 4 件事</h3>
-            <p>优先看中国内地是否可用、是否支持热点、是否带号码或短信能力、交付和启用说明是什么。</p>
-          </article>
-          <article class="path-card reveal">
-            <strong>03</strong>
-            <h3>到手后先做实测</h3>
-            <p>先测网页访问、热点共享、短信能力和设备兼容，不要等到临时需要时才第一次配置。</p>
-          </article>
-          <article class="path-card reveal">
-            <strong>04</strong>
-            <h3>长期用再看续费</h3>
-            <p>如果你要长期备用，续费逻辑、号码连续性和后台状态查询比一次性促销更重要。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section faq-section">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>购买前最常见的 4 个问题</h2>
-        </div>
-        <div class="faq-grid">
-          <details class="faq-item reveal" open>
-            <summary>中国内地可用 eSIM 到底要先看什么</summary>
-            <p>先看是否支持中国内地场景、是否要求境外预激活、是否支持热点共享、是否有号码短信能力，然后再看价格。</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>香港 eSIM 中国能用吗</summary>
-            <p>部分香港 eSIM 与香港线路方案可以覆盖中国内地场景，但要分清访客产品、长期备用线路和激活门槛，不建议只看名称。</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>中国 eSIM 热点共享重要吗</summary>
-            <p>非常重要。对跨境办公、旅行和多设备用户来说，热点共享往往比单纯的手机上网更实用。</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>为什么续费保号和短信能力也要看</summary>
-            <p>因为很多用户买的不是一次性流量，而是长期备用号码、账号验证通道和更稳定的移动网络准备方案。</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="section cta-section">
-        <div class="cta-box reveal">
-          <p class="eyebrow">esimka.top</p>
-          <h2>如果你想找的是低价、低门槛、还能长期用的中国 eSIM</h2>
-          <p>
-            那就不要只把它看成一张流量卡。更好的判断方式是把价格、热点共享、香港号码短信、自动交付、续费保号和中国内地可用性一起看。
-            这也是为什么很多用户最终会把 esimka.top 放进候选列表。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://esimka.top" rel="nofollow sponsored" target="_blank">打开 esimka.top</a>
-            <a class="button button-secondary" href="https://github.com/rul2tlf-maker/china-esim-mainland-activation-guide" target="_blank">查看仓库与 README</a>
+    <section class="section">
+      <div class="card-pair">
+        <article class="image-card wide">
+          <img src="./assets/img/renewal-panel.png" alt="续费面板截图">
+          <div class="card-copy">
+            <span class="badge">续费面板</span>
+            <h3>长期用户看的是续费效率，而不是只看首单。</h3>
           </div>
-        </div>
-      </section>
-    </main>
-  </div>
+        </article>
+        <article class="text-card">
+          <p class="eyebrow">Why users care</p>
+          <h2>为什么很多人会把 eSIM 当成传统代理方案之外的另一条路径。</h2>
+          <p>因为它更接近移动网络层的解决思路。对部分场景而言，海外或香港移动数据路径、热点共享和原生 IP 信号，会比纯浏览器层面的处理方式更接近“拿起来就能用”的体验。</p>
+          <p>如果你已经把需求缩小到“我要中国内地可用 eSIM，而且最好开卡和续费都别太折腾”，那再去看 <a href="https://esimka.top/" rel="nofollow sponsored">esimka.top</a> 会更有效率。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <div class="panel-inner">
+        <p class="eyebrow dark">Quick answer</p>
+        <h2>中国 eSIM 值不值得买，关键不是“有没有”，而是“适不适合你的连接场景”。</h2>
+        <p>如果你的目标是国际移动数据、跨境访问、电脑热点共享或香港号码短信能力，选择逻辑会比普通流量卡更复杂。把这些条件先理顺，转化率反而更高。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>使用 eSIM、漫游与跨境数据服务时，请遵守当地法律、运营商政策与平台规则。</p>
+  </footer>
 
   <script src="./assets/vendor/anime.umd.min.js"></script>
   <script src="./script.js"></script>
