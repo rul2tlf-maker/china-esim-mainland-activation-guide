@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
   --bg: #06101c;
-  --panel: rgba(10, 23, 39, 0.84);
+  --panel: rgba(15, 30, 49, 0.92);
   --line: rgba(106, 201, 255, 0.18);
   --line-strong: rgba(106, 201, 255, 0.34);
   --text: #eef6ff;
@@ -51,7 +51,7 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
 }
 .brand { font-size: 14px; }
-.nav-links { display: flex; flex-wrap: wrap; gap: 18px; color: var(--muted); font-size: 14px; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 18px; color: #d7e8f7; font-size: 14px; }
 
 .hero-grid {
   display: grid;
@@ -66,6 +66,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { font-size: clamp(2.5rem, 4.9vw, 4.7rem); line-height: 1.02; max-width: 12ch; margin-bottom: 20px; }
 h2 { font-size: clamp(1.95rem, 3vw, 3.1rem); line-height: 1.08; max-width: 15ch; }
 h3 { font-size: 1.18rem; margin-bottom: 12px; }
+h1, h2, h3, strong, summary, .brand, .eyebrow { color: var(--text); }
 
 .lead,
 .need-card p,
@@ -104,6 +105,7 @@ h3 { font-size: 1.18rem; margin-bottom: 12px; }
 .button-secondary {
   background: rgba(9, 16, 27, 0.72);
   border-color: var(--line-strong);
+  color: var(--text);
 }
 
 .hero-pills {
@@ -119,9 +121,34 @@ h3 { font-size: 1.18rem; margin-bottom: 12px; }
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(9, 16, 27, 0.74);
-  color: #d3ebff;
+  color: #eef8ff;
   font-size: 14px;
 }
+
+.lead,
+.need-card p,
+.stack-item p,
+.compare-card p,
+.proof-card figcaption,
+.scenario-card p,
+.path-card p,
+.faq-item p,
+.cta-box p,
+.score-card span,
+.bar-meta span,
+.bar-meta strong,
+.compare-card li,
+.nav-links a,
+.faq-item summary {
+  color: #d8e7f4;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
+}
+
+.lead { color: #e8f4fd; }
+.compare-card li,
+.faq-item summary,
+.bar-meta strong,
+.score-card strong { color: #f2f9ff; }
 
 .radar-card,
 .need-card,
