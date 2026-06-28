@@ -11,19 +11,30 @@ if (!reduceMotion && window.anime) {
   });
 
   anime({
-    targets: [".ring-a", ".ring-b", ".ring-c"],
+    targets: ".radar-sweep",
     rotate: 360,
-    duration: 18000,
+    duration: 5000,
     easing: "linear",
     loop: true
   });
 
   anime({
-    targets: ".signal-dot",
-    scale: [0.9, 1.25],
+    targets: ".radar-pulse",
+    scale: [0.9, 1.3],
     opacity: [0.7, 1],
-    duration: 1700,
+    duration: 1600,
     direction: "alternate",
+    easing: "easeInOutSine",
+    loop: true
+  });
+
+  anime({
+    targets: [".node-a", ".node-b", ".node-c"],
+    scale: [0.85, 1.2],
+    opacity: [0.5, 1],
+    direction: "alternate",
+    delay: anime.stagger(180),
+    duration: 1500,
     easing: "easeInOutSine",
     loop: true
   });
@@ -32,22 +43,9 @@ if (!reduceMotion && window.anime) {
     targets: ".hero-pills li",
     translateY: [16, 0],
     opacity: [0, 1],
-    delay: anime.stagger(80, { start: 420 }),
-    duration: 700,
+    delay: anime.stagger(70, { start: 420 }),
+    duration: 680,
     easing: "easeOutQuad"
-  });
-
-  anime({
-    targets: ".path-line span",
-    width: ["0%", "100%"],
-    duration: 1500,
-    delay: 650,
-    easing: "easeInOutQuart"
-  });
-} else {
-  document.querySelectorAll(".reveal").forEach((node) => {
-    node.style.opacity = "1";
-    node.style.transform = "none";
   });
 }
 
@@ -70,11 +68,28 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.style.transform = "none";
     }
 
+    if (entry.target.classList.contains("advantage-compare")) {
+      entry.target.querySelectorAll(".bar-row").forEach((row, index) => {
+        const fill = row.querySelector(".bar-track span");
+        const width = row.dataset.width || "0";
+        if (!fill) {
+          return;
+        }
+        anime({
+          targets: fill,
+          width: [`0%`, `${width}%`],
+          delay: 180 + index * 120,
+          duration: 1100,
+          easing: "easeOutCubic"
+        });
+      });
+    }
+
     observer.unobserve(entry.target);
   });
-}, { threshold: 0.16 });
+}, { threshold: 0.14 });
 
-document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
+document.querySelectorAll(".reveal, .advantage-compare").forEach((node) => observer.observe(node));
 
 document.querySelectorAll(".count").forEach((node) => {
   const target = Number(node.dataset.count || "0");
@@ -89,8 +104,8 @@ document.querySelectorAll(".count").forEach((node) => {
     targets: state,
     value: target,
     round: target % 1 === 0 ? 1 : 10,
-    duration: 1500,
-    delay: 500,
+    duration: 1450,
+    delay: 520,
     easing: "easeOutCubic",
     update: () => {
       node.textContent = target % 1 === 0 ? String(Math.round(state.value)) : state.value.toFixed(1);
